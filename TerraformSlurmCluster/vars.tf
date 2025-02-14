@@ -1,3 +1,8 @@
+variable "region" {
+  type    = string
+  default = "RegionOne"
+}
+
 variable "key_pair" {
   type    = string
   default = "slurm"
@@ -5,22 +10,22 @@ variable "key_pair" {
 
 variable "ubuntu_jammy_image_id" {
   type = string
-  default = "5f5a9f1c-2666-4eeb-a58c-0339378176c2"
+  default = "c363d3de-7811-432f-8e5a-75206ece6dac"
 }
 
 variable "mini_flavor_id" {
   type = string
-  default = "0081036a-c935-4810-8044-d68b87f299db"
+  default = "7bea2f6b-ca8a-425f-8f42-ab540efba77a"
 }
 
 variable "slurm_flavor_id" {
   type = string
-  default = "8503f7d9-7307-4429-9576-d3e58ca16024"
+  default = "c20ceb66-ce9f-4488-ae57-981725b22f21"
 }
 
 variable "compute_instances_count" {
   type = number
-  default = 7
+  default = 3
 }
 
 variable "volume_size" {
@@ -35,7 +40,7 @@ variable "volume_type" {
 
 variable "ipv6_external_network" {
   type = string
-  default = "1f4c65ef-dd53-4d85-b2d0-1fd1a178522c"
+  default = "49c5cd87-ee9d-4a8e-9608-77eb9a46b583"
 }
 
 variable "slurm_subnet_cidr" {

@@ -1,3 +1,8 @@
+variable "region" {
+  type = string
+  description = "OpenStack Region variable for deployment"
+}
+
 variable "os_image_id" {
   type = string
   description = "Operating system to use for the VMs."

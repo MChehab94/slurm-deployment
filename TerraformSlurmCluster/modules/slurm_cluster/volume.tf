@@ -1,5 +1,5 @@
 resource "openstack_blockstorage_volume_v3" "nfs-ceph" {
-  region      = "RegionTwo"
+  region      = var.region
   name        = "nfs-ceph"
   size        = var.volume_size
   volume_type = var.volume_type
